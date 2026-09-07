@@ -1,0 +1,2 @@
+import { lookbook } from '../data'
+export default function Lookbook(){return <><section className="page-hero compact"><span className="eyebrow light">ZUCOL Visual Lookbook</span><h1>The ZUCOL man,<br/><em>properly presented.</em></h1><p>A premium menswear study in colour, fit, simplicity and elite Nigerian dressing.</p></section><section className="lookbook section-pad">{lookbook.map((img,i)=><figure className={`look-${i+1}`} key={img}><img src={img} alt={`ZUCOL menswear look ${i+1}`}/><figcaption>LOOK 0{i+1} • ZUCOL APPAREL</figcaption></figure>)}</section></>}
