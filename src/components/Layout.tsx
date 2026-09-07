@@ -30,7 +30,10 @@ export function Layout({ children, favorites, onSearch, onBook }: Props) {
 
   return (
     <div className="site-shell">
-      <div className="announcement">WELCOME TO ZUCOL APPAREL • ELITE TAILOR • ABUJA • WORLDWIDE DELIVERY • WHATSAPP {contactInfo.phoneDisplay}</div>
+      <div className="announcement">
+        <span className="announce-desktop">WELCOME TO ZUCOL APPAREL • ELITE TAILOR • ABUJA • WORLDWIDE DELIVERY • WHATSAPP {contactInfo.phoneDisplay}</span>
+        <span className="announce-mobile">ZUCOL APPAREL • ABUJA • WORLDWIDE DELIVERY • {contactInfo.phoneDisplay}</span>
+      </div>
       <header className="header">
         <Link className="brand" to="/" aria-label="ZUCOL home"><img src="/brand/zucol-wordmark.png" alt="ZUCOL" /></Link>
         <nav className="desktop-nav" aria-label="Main navigation">{nav.map(([to, label]) => <NavLink key={to} to={to} className={({ isActive }) => (isActive ? 'active' : '')}>{label}</NavLink>)}</nav>
