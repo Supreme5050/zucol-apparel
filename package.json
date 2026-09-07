@@ -27,5 +27,8 @@
   "overrides": {
     "motion-dom": "12.23.12",
     "motion-utils": "12.23.6"
+  },
+  "allowScripts": {
+    "esbuild@0.25.12": true
   }
 }
